@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'GLTD' target in the 'GLTD' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
