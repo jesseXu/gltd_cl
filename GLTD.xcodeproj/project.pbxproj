@@ -10,6 +10,7 @@
 		8889F9E215260D4E00AB7024 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8889F9E115260D4E00AB7024 /* Foundation.framework */; };
 		8889F9E515260D4E00AB7024 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F9E415260D4E00AB7024 /* main.m */; };
 		8889F9E915260D4E00AB7024 /* GLTD.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8889F9E815260D4E00AB7024 /* GLTD.1 */; };
+		88F6D43C1526A5B700A686DB /* CommandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F6D43B1526A5B700A686DB /* CommandManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,9 @@
 		8889F9E415260D4E00AB7024 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8889F9E715260D4E00AB7024 /* GLTD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLTD-Prefix.pch"; sourceTree = "<group>"; };
 		8889F9E815260D4E00AB7024 /* GLTD.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = GLTD.1; sourceTree = "<group>"; };
+		88F6D43A1526A5B700A686DB /* CommandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandManager.h; sourceTree = "<group>"; };
+		88F6D43B1526A5B700A686DB /* CommandManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandManager.m; sourceTree = "<group>"; };
+		88F6D43D1526A89C00A686DB /* CommandList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				8889F9E415260D4E00AB7024 /* main.m */,
+				88F6D43A1526A5B700A686DB /* CommandManager.h */,
+				88F6D43B1526A5B700A686DB /* CommandManager.m */,
+				88F6D43D1526A89C00A686DB /* CommandList.h */,
 				8889F9E815260D4E00AB7024 /* GLTD.1 */,
 				8889F9E615260D4E00AB7024 /* Supporting Files */,
 			);
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8889F9E515260D4E00AB7024 /* main.m in Sources */,
+				88F6D43C1526A5B700A686DB /* CommandManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +235,7 @@
 				8889F9EE15260D4E00AB7024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
