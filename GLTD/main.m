@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GLTDManager.h"
 
 int main(int argc, const char * argv[])
 {
@@ -14,7 +15,10 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         // insert code here...
-        NSLog(@"Hello, World!");
+        
+        GLTDManager *gltdManeger = [[GLTDManager alloc] init];
+
+        [gltdManeger applicationDidStart:nil];
         
     }
     return 0;

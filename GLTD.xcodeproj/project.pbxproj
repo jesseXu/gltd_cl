@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		887137281547F15F00D5CA6D /* GLTDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 887137271547F15F00D5CA6D /* GLTDManager.m */; };
 		8889F9E215260D4E00AB7024 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8889F9E115260D4E00AB7024 /* Foundation.framework */; };
 		8889F9E515260D4E00AB7024 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F9E415260D4E00AB7024 /* main.m */; };
 		8889F9E915260D4E00AB7024 /* GLTD.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8889F9E815260D4E00AB7024 /* GLTD.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		887137261547F15F00D5CA6D /* GLTDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTDManager.h; sourceTree = "<group>"; };
+		887137271547F15F00D5CA6D /* GLTDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTDManager.m; sourceTree = "<group>"; };
 		8889F9DD15260D4E00AB7024 /* GLTD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GLTD; sourceTree = BUILT_PRODUCTS_DIR; };
 		8889F9E115260D4E00AB7024 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8889F9E415260D4E00AB7024 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				8889F9E415260D4E00AB7024 /* main.m */,
+				887137261547F15F00D5CA6D /* GLTDManager.h */,
+				887137271547F15F00D5CA6D /* GLTDManager.m */,
 				8889F9E815260D4E00AB7024 /* GLTD.1 */,
 				8889F9E615260D4E00AB7024 /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8889F9E515260D4E00AB7024 /* main.m in Sources */,
+				887137281547F15F00D5CA6D /* GLTDManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +233,7 @@
 				8889F9EE15260D4E00AB7024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
