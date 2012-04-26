@@ -11,6 +11,11 @@
 		8889F9E215260D4E00AB7024 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8889F9E115260D4E00AB7024 /* Foundation.framework */; };
 		8889F9E515260D4E00AB7024 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F9E415260D4E00AB7024 /* main.m */; };
 		8889F9E915260D4E00AB7024 /* GLTD.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8889F9E815260D4E00AB7024 /* GLTD.1 */; };
+		88BB06B91548F16600B08799 /* CommandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BB06B81548F16600B08799 /* CommandManager.m */; };
+		88BB06BD1548F29500B08799 /* CommandParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BB06BC1548F29500B08799 /* CommandParser.m */; };
+		88BB06C61549181A00B08799 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BB06C51549181A00B08799 /* Version.m */; };
+		88BB06CA15491A2A00B08799 /* VERSIONCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BB06C915491A2A00B08799 /* VERSIONCommand.m */; };
+		88BB06CD15491CB200B08799 /* EXITCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BB06CC15491CB200B08799 /* EXITCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +39,17 @@
 		8889F9E415260D4E00AB7024 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8889F9E715260D4E00AB7024 /* GLTD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLTD-Prefix.pch"; sourceTree = "<group>"; };
 		8889F9E815260D4E00AB7024 /* GLTD.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = GLTD.1; sourceTree = "<group>"; };
+		88BB06B71548F16600B08799 /* CommandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandManager.h; sourceTree = "<group>"; };
+		88BB06B81548F16600B08799 /* CommandManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandManager.m; sourceTree = "<group>"; };
+		88BB06BB1548F29500B08799 /* CommandParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandParser.h; sourceTree = "<group>"; };
+		88BB06BC1548F29500B08799 /* CommandParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandParser.m; sourceTree = "<group>"; };
+		88BB06BF1548FDE200B08799 /* CommandDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDelegate.h; sourceTree = "<group>"; };
+		88BB06C41549181A00B08799 /* Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
+		88BB06C51549181A00B08799 /* Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Version.m; sourceTree = "<group>"; };
+		88BB06C815491A2A00B08799 /* VERSIONCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VERSIONCommand.h; sourceTree = "<group>"; };
+		88BB06C915491A2A00B08799 /* VERSIONCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VERSIONCommand.m; sourceTree = "<group>"; };
+		88BB06CB15491CB200B08799 /* EXITCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXITCommand.h; sourceTree = "<group>"; };
+		88BB06CC15491CB200B08799 /* EXITCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXITCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +95,15 @@
 				8889F9E415260D4E00AB7024 /* main.m */,
 				887137261547F15F00D5CA6D /* GLTDManager.h */,
 				887137271547F15F00D5CA6D /* GLTDManager.m */,
+				88BB06B71548F16600B08799 /* CommandManager.h */,
+				88BB06B81548F16600B08799 /* CommandManager.m */,
+				88BB06BB1548F29500B08799 /* CommandParser.h */,
+				88BB06BC1548F29500B08799 /* CommandParser.m */,
+				88BB06BF1548FDE200B08799 /* CommandDelegate.h */,
+				88BB06C41549181A00B08799 /* Version.h */,
+				88BB06C51549181A00B08799 /* Version.m */,
 				8889F9E815260D4E00AB7024 /* GLTD.1 */,
+				88BB06C7154919F100B08799 /* command */,
 				8889F9E615260D4E00AB7024 /* Supporting Files */,
 			);
 			path = GLTD;
@@ -91,6 +115,17 @@
 				8889F9E715260D4E00AB7024 /* GLTD-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88BB06C7154919F100B08799 /* command */ = {
+			isa = PBXGroup;
+			children = (
+				88BB06C815491A2A00B08799 /* VERSIONCommand.h */,
+				88BB06C915491A2A00B08799 /* VERSIONCommand.m */,
+				88BB06CB15491CB200B08799 /* EXITCommand.h */,
+				88BB06CC15491CB200B08799 /* EXITCommand.m */,
+			);
+			name = command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +180,11 @@
 			files = (
 				8889F9E515260D4E00AB7024 /* main.m in Sources */,
 				887137281547F15F00D5CA6D /* GLTDManager.m in Sources */,
+				88BB06B91548F16600B08799 /* CommandManager.m in Sources */,
+				88BB06BD1548F29500B08799 /* CommandParser.m in Sources */,
+				88BB06C61549181A00B08799 /* Version.m in Sources */,
+				88BB06CA15491A2A00B08799 /* VERSIONCommand.m in Sources */,
+				88BB06CD15491CB200B08799 /* EXITCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

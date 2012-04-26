@@ -7,8 +7,14 @@
 //
 
 #import "GLTDManager.h"
+#import "CommandManager.h"
 
 @interface GLTDManager ()
+{
+    CommandManager *_CMDManager;
+}
+
+@property (retain, nonatomic) CommandManager *CMDManager;
 
 - (void)welcome;
 - (void)bye;
@@ -18,12 +24,21 @@
 
 @implementation GLTDManager
 
+@synthesize CMDManager = _CMDManager;
+
+- (void)dealloc
+{
+    [_CMDManager release];
+    [super dealloc];
+}
+
 - (void)applicationDidStart:(NSDictionary *)info
 {
+    self.CMDManager = [[[CommandManager alloc] init] autorelease];
     
     [self welcome];
     
-    //TODO
+    [self.CMDManager startMainRoop];
     
     [self bye];
 }
@@ -36,7 +51,7 @@
 
 - (void)bye
 {
-    
+    printf("Bye bye!\n");
 }
 
 
